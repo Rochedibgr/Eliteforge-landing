@@ -61,8 +61,7 @@ getAdviceBtn.addEventListener("click", getAdvice);
 const form = document.getElementById("intakeFormElement");
 const errorMsg = document.getElementById("formMessage");
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+form.addEventListener("submit", () => {
 
     const nameInput = document.getElementById("clientName");
     const emailInput = document.getElementById("clientEmail");
